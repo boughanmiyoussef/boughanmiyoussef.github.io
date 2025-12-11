@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Youssef Boughanmi - Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Boughanmi | AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>My portfolio website is under construction.</p>
-    <p>🚀 Coming soon!</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YOUSSEF</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hi, I'm <span class="highlight">Youssef Boughanmi</span></h1>
+                <h2 class="fade-in-delay">Software Engineer Specializing in AI & Machine Learning</h2>
+                <p class="fade-in-delay-2">I build intelligent systems and scalable web applications. Passionate about solving real problems with clean, efficient code.</p>
+                <a href="#projects" class="btn fade-in-delay-3">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <!-- Replace 'profile.jpg' with your image filename -->
+                <img src="assets/images/profile.jpg" alt="Youssef Boughanmi" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title"><span>About Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text slide-in-left">
+                    <p>I am a recent graduate from Holberton School's intensive two-year program, specializing in AI and Machine Learning. My foundation combines full-stack development with applied deep learning.</p>
+                    <p>I enjoy turning complex challenges into elegant software solutions, whether it's a full-featured e-commerce platform or a convolutional neural network for image recognition.</p>
+                    <p>When I'm not coding, I'm probably learning about new advancements in AI or exploring new frameworks.</p>
+                </div>
+                <div class="about-info slide-in-right">
+                    <div class="info-item">
+                        <strong>Location:</strong> Tunis, Tunisia
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong> youssef.boughanmi@example.com
+                    </div>
+                    <div class="info-item">
+                        <strong>Education:</strong> Holberton School (AI/ML Specialization)
+                    </div>
+                    <div class="info-item">
+                        <strong>Status:</strong> Open to Opportunities
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><span>Featured Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>ShopEase E-commerce</h3>
+                    <p>A full-stack MERN platform with user/admin roles, PayPal integration, persistent cart, and real-time dashboard.</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/boughanmiyoussef" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>CNN Image Classifier</h3>
+                    <p>A deep learning model built with TensorFlow & Keras for image classification, achieving over 95% accuracy on test data.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                    </div>
+                    <a href="https://github.com/boughanmiyoussef" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Time Series Forecast</h3>
+                    <p>An RNN model for predicting financial time series data, featuring data preprocessing and visualization pipelines.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <a href="https://github.com/boughanmiyoussef" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span>Technical Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                    <ul>
+                        <li>React.js / Node.js</li>
+                        <li>TensorFlow / Keras</li>
+                        <li>Express.js / Redux</li>
+                        <li>Pandas / NumPy</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>MongoDB / MySQL</li>
+                        <li>Docker (Learning)</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span>Get In Touch</span></h2>
+            <p class="contact-subtitle">I'm always interested in hearing about new opportunities and interesting projects.</p>
+            <div class="contact-links">
+                <a href="mailto:yussefboughanmy@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="contact-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/boughanmiyoussef" target="_blank" class="contact-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Youssef Boughanmi. All rights reserved.</p>
+            <p>Hosted with <i class="fas fa-heart"></i> on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
