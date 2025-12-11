@@ -3,170 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Boughanmi - Portfolio</title>
+    <title>Youssef Boughanmi | AI/ML Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="Youssef Boughanmi">Youssef Boughanmi</h1>
-            <p class="subtitle">Software Engineer – AI & Machine Learning Specialization</p>
-            <div class="social-links">
-                <a href="mailto:yussefboughanmy@gmail.com" class="neon-btn">Email</a>
-                <a href="tel:+21626068101" class="neon-btn">+216 26 068 101</a>
-                <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="neon-btn">LinkedIn</a>
-                <a href="https://github.com/boughanmiyoussef" target="_blank" class="neon-btn">GitHub</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YOUSSEF</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#narrative">My Story</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="hero-bg"></div>
-    </header>
+    </nav>
 
-    <!-- Profile Section -->
-    <section id="profile" class="section">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <h2>Profile</h2>
-            <p>Software Engineer specialized in AI and Machine Learning, with project-based training from Holberton School. Built scalable web applications using the MERN stack and intelligent systems with Python, TensorFlow, and Keras. Developed ShopEase, a full-stack e-commerce platform featuring secure payments, persistent cart merging, and real-time order tracking. Proficient in RESTful APIs, deep learning workflows, and foundational DevOps practices.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section alt-bg">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Software Engineer – AI & Machine Learning Specialization</h3>
-                <p>Holberton School, Tunis, Tunisia</p>
-                <p>10/2024 – 03/2026</p>
-                <ul>
-                    <li>Completed intensive project-based curriculum in full-stack development and applied machine learning.</li>
-                    <li>Gained expertise in MERN stack, system programming in C, algorithms, databases, and AI/ML with TensorFlow/Keras.</li>
-                    <li>Specialized in building and deploying scalable applications and deep learning models.</li>
-                </ul>
+            <div class="hero-content">
+                <h1 class="fade-in">Hi, I'm <span class="highlight">Youssef Boughanmi</span></h1>
+                <h2 class="fade-in-delay">Software Engineer Specializing in AI & Machine Learning</h2>
+                <p class="fade-in-delay-2">
+                    I build intelligent systems and scalable web applications. Passionate about solving real problems with clean, efficient code.
+                </p>
+                <a href="#projects" class="btn fade-in-delay-3">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/profile.jpg" alt="Youssef Boughanmi - AI/ML Engineer" class="profile-img">
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- My Narrative -->
+    <section id="narrative" class="narrative">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Git, GitHub</li>
-                        <li>VS Code</li>
-                        <li>Postman</li>
-                        <li>Cloudinary</li>
-                        <li>Docker (learning)</li>
-                        <li>npm/yarn</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps & Security</h3>
-                    <ul>
-                        <li>RESTful APIs</li>
-                        <li>JWT Authentication</li>
-                        <li>Bash Scripting</li>
-                        <li>CI/CD Basics</li>
-                        <li>CORS</li>
-                        <li>dotenv</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks/Libraries</h3>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Redux</li>
-                        <li>TensorFlow</li>
-                        <li>Keras</li>
-                        <li>PyTorch</li>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Self-Learning</li>
-                        <li>Time Management</li>
-                        <li>Communication</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Arabic</li>
-                        <li>English</li>
-                        <li>French</li>
-                    </ul>
-                </div>
+            <h2 class="section-title"><span>My Professional Narrative</span></h2>
+            <div class="narrative-content slide-in">
+                <p>
+                    I’m a software engineer. I’ve most recently specialized in AI and Machine Learning, building intelligent systems and full-stack applications. My recent work includes developing ShopEase, a production-ready e-commerce platform using the MERN stack, and diving deep into machine learning with Python, TensorFlow, and Keras. I am most fluent in JavaScript (ES6+), Python, React, Node.js, and leveraging cloud services to create scalable solutions.
+                </p>
+                <p>
+                    My path to engineering is unique; I initially studied finance at the university level before pivoting to pursue a more creative and constructive field. A key achievement was my decision to commit to Holberton School's intensive program, where I fully immersed myself in project-based learning. This shift demonstrated my ability to adapt and dedicate myself to mastering complex new disciplines from the ground up.
+                </p>
+                <p>
+                    I am motivated by the process of turning abstract problems into elegant, functional software. I believe this focus on tangible results, combined with my collaborative mindset from peer programming, allows me to positively impact a team. I strive to contribute clean, well-documented code and a perspective geared towards practical implementation and continuous learning.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section alt-bg">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>ShopEase E-commerce Platform</h3>
-                <p class="project-date">12/2024 – 03/2025</p>
-                <p>Technologies: React.js, Node.js, Express.js, MongoDB, Redux, TailwindCSS, JWT, Cloudinary, PayPal API</p>
-                <ul>
-                    <li>Engineered a full-stack e-commerce platform with user/admin roles, implementing secure JWT authentication and PayPal payment integration.</li>
-                    <li>Developed a persistent cart system that merges guest and user sessions, improving user retention by maintaining cart continuity.</li>
-                    <li>Built real-time order tracking and product filtering features, reducing customer search time and enhancing admin operational efficiency.</li>
-                    <li>Optimized front-end performance using React and TailwindCSS, achieving a 30% reduction in mobile load times.</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/boughanmiyoussef/ShopEase" target="_blank" class="neon-btn">View Code</a>
-                    <!-- Add live demo if available: <a href="https://shopease.yourdomain.com" target="_blank" class="neon-btn">Live Demo</a> -->
+            <h2 class="section-title"><span>Featured Projects</span></h2>
+
+            <!-- ShopEase Project Card with Gallery -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>ShopEase — Full-Stack E-commerce Platform</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/boughanmiyoussef/shop-ease" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <!-- Add live demo if available later -->
+                        <!-- <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a> -->
+                    </div>
                 </div>
-                <div class="gallery">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 1" onclick="openLightbox('/ShopEase/ShopEase1.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 2" onclick="openLightbox('/ShopEase/ShopEase2.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 3" onclick="openLightbox('ShopEase/ShopEase3.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 4" onclick="openLightbox('ShopEase/ShopEase4.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 5" onclick="openLightbox('ShopEase/ShopEase5.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 6" onclick="openLightbox('ShopEase/ShopEase6.png')">
-                    <img src="ShopEase/Shopease8.png" alt="ShopEase Screenshot 7" onclick="openLightbox('ShopEase/ShopEase7.png')">
-                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 8" onclick="openLightbox('ShopEase/ShopEase8.png')">
+
+                <div class="project-gallery">
+                    <!-- Thumbnail Strip -->
+                    <div class="gallery-thumbs" id="thumbs">
+                        <!-- Dynamically populated by JS -->
+                    </div>
+                    <!-- Main Viewer -->
+                    <div class="gallery-main">
+                        <img id="mainImage" src="assets/images/ShopEase1.png" alt="ShopEase Interface">
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <p>
+                        A full-stack MERN platform with user/admin roles, secure JWT authentication, PayPal integration, persistent cart merging (guest ↔ logged-in), and real-time order tracking dashboard.
+                    </p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Redux</span>
+                        <span>JWT</span>
+                        <span>Cloudinary</span>
+                        <span>PayPal API</span>
+                        <span>TailwindCSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional: Add other projects below -->
+            <!-- CNN Classifier, etc. -->
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title"><span>My Resume</span></h2>
+            <div class="resume-content">
+                <div class="resume-text slide-in-left">
+                    <h3>Download or View Online</h3>
+                    <p>
+                        You can view my interactive resume online or download the PDF for offline use.
+                    </p>
+                    <div class="resume-links">
+                        <a href="https://flowcv.com/resume/9sca2vpmin" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> View Online Resume
+                        </a>
+                        <a href="Youssef-Boughanmi-Software_Engineer2025.pdf" download class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="resume-preview slide-in-right">
+                    <div class="preview-placeholder">
+                        <i class="fas fa-file-pdf"></i>
+                        <p>Interactive Resume</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span>Contact Me</span></h2>
+            <p class="contact-subtitle">Let’s build something intelligent together.</p>
+            <div class="contact-grid">
+                <a href="mailto:yussefboughanmy@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>yussefboughanmy@gmail.com</p>
+                </a>
+                <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Let’s connect</p>
+                </a>
+                <a href="https://github.com/boughanmiyoussef" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Explore my code</p>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="contact-card" style="opacity:0.4; pointer-events:none">
+                    <div class="contact-icon"><i class="fab fa-twitter"></i></div>
+                    <h3>Twitter</h3>
+                    <p>Coming soon</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Youssef Boughanmi. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Youssef Boughanmi. All rights reserved.</p>
+            <p>Hosted with <i class="fas fa-heart" style="color:#ff4d94"></i> on GitHub Pages</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
