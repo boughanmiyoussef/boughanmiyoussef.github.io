@@ -1,84 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Youssef Boughanmi – AI & ML Engineer</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Boughanmi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ---------- HERO ---------- -->
-  <section id="hero">
-    <canvas id="mesh"></canvas>
-    <div class="hero-content">
-      <h1 class="glitch" data-text="Youssef Boughanmi">Youssef Boughanmi</h1>
-      <p>Software Engineer · AI & Machine Learning</p>
-      <div class="badges">
-        <a href="cv.pdf" target="_blank" class="badge">Download CV</a>
-        <a href="https://github.com/boughanmiyoussef" target="_blank" class="badge">GitHub</a>
-        <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="badge">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- ABOUT ---------- -->
-  <section id="about">
-    <h2>Profile</h2>
-    <p>
-      Software Engineer specialized in AI and Machine Learning, trained at Holberton School.
-      I build scalable web apps with the MERN stack and intelligent systems with Python, TensorFlow & Keras.
-      Creator of <strong>ShopEase</strong>, a full-stack e-commerce platform with secure payments, persistent cart merging
-      and real-time order tracking.
-    </p>
-  </section>
-
-  <!-- ---------- SKILLS ---------- -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div>JavaScript (ES6+)</div><div>Python</div><div>C</div><div>SQL</div>
-      <div>React</div><div>Node.js</div><div>Express</div><div>Redux</div>
-      <div>TensorFlow</div><div>Keras</div><div>MongoDB</div><div>JWT</div>
-      <div>Git</div><div>Docker</div><div>REST APIs</div><div>CI/CD</div>
-    </div>
-  </section>
-
-  <!-- ---------- PROJECTS ---------- -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <article class="project">
-      <h3>ShopEase – Full-Stack E-Commerce</h3>
-      <p class="tech">React · Node · Express · MongoDB · Redux · Tailwind · PayPal API · Cloudinary</p>
-      <ul>
-        <li>Secure JWT authentication & role-based access (user/admin).</li>
-        <li>Persistent cart that merges guest & logged-in sessions.</li>
-        <li>Real-time order tracking & advanced product filtering.</li>
-        <li>30 % faster mobile load via React + Tailwind optimizations.</li>
-      </ul>
-      <div class="showcase">
-        <button class="arrow left" aria-label="prev">&lt;</button>
-        <div class="viewer">
-          <!-- images injected by script -->
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Youssef Boughanmi">Youssef Boughanmi</h1>
+            <p class="subtitle">Software Engineer – AI & Machine Learning Specialization</p>
+            <div class="social-links">
+                <a href="mailto:yussefboughanmy@gmail.com" class="neon-btn">Email</a>
+                <a href="tel:+21626068101" class="neon-btn">+216 26 068 101</a>
+                <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="neon-btn">LinkedIn</a>
+                <a href="https://github.com/boughanmiyoussef" target="_blank" class="neon-btn">GitHub</a>
+            </div>
         </div>
-        <button class="arrow right" aria-label="next">&gt;</button>
-      </div>
-      <div class="links">
-        <a href="https://github.com/boughanmiyoussef/ShopEase" target="_blank">Source Code</a>
-      </div>
-    </article>
-  </section>
+        <div class="hero-bg"></div>
+    </header>
 
-  <!-- ---------- CONTACT ---------- -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s build the future together.</p>
-    <a href="mailto:yussefboughanmy@gmail.com">yussefboughanmy@gmail.com</a>
-    <span>+216 26 068 101</span>
-  </section>
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <div class="container">
+            <h2>Profile</h2>
+            <p>Software Engineer specialized in AI and Machine Learning, with project-based training from Holberton School. Built scalable web applications using the MERN stack and intelligent systems with Python, TensorFlow, and Keras. Developed ShopEase, a full-stack e-commerce platform featuring secure payments, persistent cart merging, and real-time order tracking. Proficient in RESTful APIs, deep learning workflows, and foundational DevOps practices.</p>
+        </div>
+    </section>
 
-  <footer>© <span id="year"></span> Youssef Boughanmi</footer>
+    <!-- Education Section -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Software Engineer – AI & Machine Learning Specialization</h3>
+                <p>Holberton School, Tunis, Tunisia</p>
+                <p>10/2024 – 03/2026</p>
+                <ul>
+                    <li>Completed intensive project-based curriculum in full-stack development and applied machine learning.</li>
+                    <li>Gained expertise in MERN stack, system programming in C, algorithms, databases, and AI/ML with TensorFlow/Keras.</li>
+                    <li>Specialized in building and deploying scalable applications and deep learning models.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git, GitHub</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                        <li>Cloudinary</li>
+                        <li>Docker (learning)</li>
+                        <li>npm/yarn</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Security</h3>
+                    <ul>
+                        <li>RESTful APIs</li>
+                        <li>JWT Authentication</li>
+                        <li>Bash Scripting</li>
+                        <li>CI/CD Basics</li>
+                        <li>CORS</li>
+                        <li>dotenv</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks/Libraries</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Redux</li>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>PyTorch</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Self-Learning</li>
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Arabic</li>
+                        <li>English</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>ShopEase E-commerce Platform</h3>
+                <p class="project-date">12/2024 – 03/2025</p>
+                <p>Technologies: React.js, Node.js, Express.js, MongoDB, Redux, TailwindCSS, JWT, Cloudinary, PayPal API</p>
+                <ul>
+                    <li>Engineered a full-stack e-commerce platform with user/admin roles, implementing secure JWT authentication and PayPal payment integration.</li>
+                    <li>Developed a persistent cart system that merges guest and user sessions, improving user retention by maintaining cart continuity.</li>
+                    <li>Built real-time order tracking and product filtering features, reducing customer search time and enhancing admin operational efficiency.</li>
+                    <li>Optimized front-end performance using React and TailwindCSS, achieving a 30% reduction in mobile load times.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/boughanmiyoussef/ShopEase" target="_blank" class="neon-btn">View Code</a>
+                    <!-- Add live demo if available: <a href="https://shopease.yourdomain.com" target="_blank" class="neon-btn">Live Demo</a> -->
+                </div>
+                <div class="gallery">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 1" onclick="openLightbox('/ShopEase/ShopEase1.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 2" onclick="openLightbox('/ShopEase/ShopEase2.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 3" onclick="openLightbox('ShopEase/ShopEase3.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 4" onclick="openLightbox('ShopEase/ShopEase4.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 5" onclick="openLightbox('ShopEase/ShopEase5.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 6" onclick="openLightbox('ShopEase/ShopEase6.png')">
+                    <img src="ShopEase/Shopease8.png" alt="ShopEase Screenshot 7" onclick="openLightbox('ShopEase/ShopEase7.png')">
+                    <img src="ShopEase/ShopEase8.png" alt="ShopEase Screenshot 8" onclick="openLightbox('ShopEase/ShopEase8.png')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Youssef Boughanmi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
