@@ -6,178 +6,122 @@
     <title>Youssef Boughanmi | AI/ML Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Floating Particles Background -->
-    <div class="particles"></div>
-    
-    <!-- Cursor Follower -->
-    <div class="cursor-follower"></div>
-    
-    <!-- Progress Bar -->
-    <div class="progress-bar"></div>
-    
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
     </button>
-    
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="#home" class="logo">
                 <span class="logo-text">YB</span>
-                <div class="logo-glow"></div>
+                <span class="logo-sub">Portfolio</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a></li>
-                <li><a href="#narrative" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    <span>My Story</span>
-                </a></li>
-                <li><a href="#projects" class="nav-link">
-                    <i class="fas fa-code"></i>
-                    <span>Projects</span>
-                </a></li>
-                <li><a href="#resume" class="nav-link">
-                    <i class="fas fa-file-alt"></i>
-                    <span>Resume</span>
-                </a></li>
-                <li><a href="#contact" class="nav-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-toggle">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-circle"></div>
-            <div class="grid-pattern"></div>
-        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="title-line">Hi, I'm</span>
-                        <span class="title-line highlight">Youssef Boughanmi</span>
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Youssef Boughanmi</span>
                     </h1>
-                    <h2 class="hero-subtitle">
-                        <span class="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </h2>
+                    <div class="hero-subtitle-container">
+                        <h2 class="hero-subtitle">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </h2>
+                    </div>
                     <p class="hero-description">
                         Building intelligent systems at the intersection of 
-                        <span class="text-gradient">software engineering</span> and 
-                        <span class="text-gradient">machine learning</span>
+                        <span class="highlight">software engineering</span> and 
+                        <span class="highlight">machine learning</span>.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            <span>View Projects</span>
-                            <i class="fas fa-arrow-right"></i>
+                            <i class="fas fa-code"></i>
+                            View Projects
                         </a>
                         <a href="#contact" class="btn btn-secondary">
-                            <span>Contact Me</span>
                             <i class="fas fa-paper-plane"></i>
+                            Get In Touch
                         </a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="floating-card">
-                        <div class="card-content">
-                            <div class="code-terminal">
-                                <div class="terminal-header">
-                                    <div class="terminal-dots">
-                                        <span class="dot red"></span>
-                                        <span class="dot yellow"></span>
-                                        <span class="dot green"></span>
-                                    </div>
-                                    <span class="terminal-title">youssef@portfolio:~</span>
-                                </div>
-                                <div class="terminal-content">
-                                    <div class="code-line"><span class="prompt">$</span> whoami</div>
-                                    <div class="code-line output">> AI/ML Software Engineer</div>
-                                    <div class="code-line"><span class="prompt">$</span> cat skills.txt</div>
-                                    <div class="code-line output">> Python · TensorFlow · React · Node.js · MongoDB</div>
-                                    <div class="code-line"><span class="prompt">$</span> <span class="cursor">█</span></div>
-                                </div>
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
+                            <span class="window-title">terminal</span>
+                        </div>
+                        <div class="code-content">
+                            <p><span class="prompt">$</span> whoami</p>
+                            <p class="output">Youssef Boughanmi | AI/ML Engineer</p>
+                            <p><span class="prompt">$</span> cat skills.txt</p>
+                            <p class="output">React · Node.js · Python · TensorFlow · MongoDB</p>
+                            <p><span class="prompt">$</span> <span class="cursor">█</span></p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <span>Scroll to explore</span>
             </div>
         </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <!-- My Narrative Section -->
-    <section id="narrative" class="narrative">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">My Professional Journey</span>
-                    <span class="title-line"></span>
-                </h2>
-                <p class="section-subtitle">From finance to cutting-edge AI development</p>
-            </div>
+            <h2 class="section-title">My Story</h2>
+            <p class="section-subtitle">From finance to cutting-edge AI development</p>
             
-            <div class="narrative-content">
-                <div class="story-timeline">
-                    <div class="timeline-item" data-aos="fade-right">
-                        <div class="timeline-marker">
-                            <div class="marker-dot"></div>
-                            <div class="marker-line"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">Before 2024</div>
-                            <h3 class="timeline-title">Finance Studies</h3>
-                            <p class="timeline-text">Developed strong analytical and problem-solving skills through university-level finance studies, laying the foundation for data-driven thinking.</p>
-                        </div>
-                    </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a software engineer who has specialized in AI and Machine Learning, building intelligent systems and full-stack applications. My recent work includes developing ShopEase, a production-ready e-commerce platform using the MERN stack, and diving deep into machine learning with Python, TensorFlow, and Keras.</p>
                     
-                    <div class="timeline-item" data-aos="fade-left">
-                        <div class="timeline-marker">
-                            <div class="marker-dot"></div>
-                            <div class="marker-line"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">2024 - 2026</div>
-                            <h3 class="timeline-title">Holberton School</h3>
-                            <p class="timeline-text">Immersed in intensive project-based learning, specializing in AI & Machine Learning. Mastered full-stack development with MERN stack and deep learning with TensorFlow/Keras.</p>
-                        </div>
-                    </div>
+                    <p>My path to engineering is unique; I initially studied finance at the university level before pivoting to pursue a more creative and constructive field. A key achievement was my decision to commit to Holberton School's intensive program, where I fully immersed myself in project-based learning.</p>
+                    
+                    <p>I am motivated by the process of turning abstract problems into elegant, functional software. I believe this focus on tangible results, combined with my collaborative mindset from peer programming, allows me to positively impact a team.</p>
                 </div>
                 
-                <div class="narrative-text" data-aos="fade-up">
-                    <div class="text-block">
-                        <p>
-                            I'm a software engineer who has specialized in AI and Machine Learning, building intelligent systems and full-stack applications. My recent work includes developing ShopEase, a production-ready e-commerce platform using the MERN stack, and diving deep into machine learning with Python, TensorFlow, and Keras. I am most fluent in JavaScript (ES6+), Python, React, Node.js, and leveraging cloud services to create scalable solutions.
-                        </p>
-                        <p>
-                            My path to engineering is unique; I initially studied finance at the university level before pivoting to pursue a more creative and constructive field. A key achievement was my decision to commit to Holberton School's intensive program, where I fully immersed myself in project-based learning. This shift demonstrated my ability to adapt and dedicate myself to mastering complex new disciplines from the ground up.
-                        </p>
-                        <p>
-                            I am motivated by the process of turning abstract problems into elegant, functional software. I believe this focus on tangible results, combined with my collaborative mindset from peer programming, allows me to positively impact a team. I strive to contribute clean, well-documented code and a perspective geared towards practical implementation and continuous learning.
-                        </p>
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2026</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-graduation-cap"></i> Holberton School</h3>
+                            <p class="degree">Software Engineering - AI & ML Specialization</p>
+                            <p>Project-based curriculum in full-stack development and applied machine learning</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Previous</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-chart-line"></i> Finance Studies</h3>
+                            <p class="degree">University Level</p>
+                            <p>Developed analytical and problem-solving skills</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,152 +131,84 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">Featured Projects</span>
-                    <span class="title-line"></span>
-                </h2>
-                <p class="section-subtitle">Showcasing my technical expertise and innovative solutions</p>
-            </div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my technical expertise</p>
             
             <!-- ShopEase Project -->
-            <div class="project-showcase" data-aos="fade-up">
-                <div class="project-badge">
-                    <span class="badge-text">Featured Project</span>
-                    <div class="badge-glow"></div>
-                </div>
-                
+            <div class="project-card featured">
                 <div class="project-header">
-                    <h3 class="project-title">ShopEase E-commerce Platform</h3>
-                    <div class="project-subtitle">Full-stack MERN platform with AI-powered features</div>
-                    <div class="project-stats">
-                        <div class="stat">
-                            <div class="stat-value">40%</div>
-                            <div class="stat-label">Cart Retention</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">30%</div>
-                            <div class="stat-label">Load Time Reduction</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">500+</div>
-                            <div class="stat-label">Products</div>
-                        </div>
-                    </div>
+                    <h3 class="project-title">
+                        <i class="fas fa-shopping-cart"></i>
+                        ShopEase E-commerce Platform
+                    </h3>
+                    <span class="project-badge">Featured</span>
                 </div>
                 
                 <div class="project-content">
                     <div class="project-gallery">
-                        <!-- Image Gallery with Multiple Viewing Options -->
-                        <div class="gallery-container">
-                            <!-- Main Image Display -->
-                            <div class="main-display">
-                                <div class="image-frame">
-                                    <img id="main-image" src="ShopEase/Shopease1.png" alt="ShopEase Screenshot" class="active">
-                                    <div class="image-overlay">
-                                        <div class="overlay-content">
-                                            <h4>ShopEase Platform</h4>
-                                            <p>Full-featured e-commerce solution</p>
-                                        </div>
-                                    </div>
+                        <div class="gallery-main">
+                            <div class="image-container">
+                                <img id="main-image" src="ShopEase/Shopease1.png" alt="ShopEase Screenshot">
+                            </div>
+                            <div class="gallery-controls">
+                                <button class="control-btn prev-btn">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="gallery-info">
+                                    <span id="image-counter">1 / 8</span>
                                 </div>
-                                <div class="image-controls">
-                                    <button class="control-btn prev-btn" aria-label="Previous image">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </button>
-                                    <button class="control-btn play-btn" aria-label="Play slideshow">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                    <button class="control-btn next-btn" aria-label="Next image">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <!-- Thumbnail Grid -->
-                            <div class="thumbnail-grid">
-                                <!-- Thumbnails will be generated by JavaScript -->
-                            </div>
-                            
-                            <!-- Gallery View Options -->
-                            <div class="view-options">
-                                <button class="view-option active" data-view="grid">
-                                    <i class="fas fa-th"></i>
-                                    <span>Grid</span>
-                                </button>
-                                <button class="view-option" data-view="carousel">
-                                    <i class="fas fa-sliders-h"></i>
-                                    <span>Carousel</span>
-                                </button>
-                                <button class="view-option" data-view="masonry">
-                                    <i class="fas fa-th-large"></i>
-                                    <span>Masonry</span>
+                                <button class="control-btn next-btn">
+                                    <i class="fas fa-chevron-right"></i>
                                 </button>
                             </div>
+                        </div>
+                        
+                        <div class="thumbnail-strip">
+                            <!-- Thumbnails will be added by JavaScript -->
                         </div>
                     </div>
                     
                     <div class="project-details">
-                        <div class="features-list">
-                            <h4>Key Features</h4>
-                            <div class="features-grid">
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <h5>Secure Authentication</h5>
-                                    <p>JWT-based authentication with role-based access control</p>
+                        <div class="project-description">
+                            <p>A full-stack MERN platform with user/admin roles, PayPal integration, persistent cart merging, and real-time dashboard.</p>
+                            
+                            <div class="features-list">
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Secure JWT Authentication</span>
                                 </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </div>
-                                    <h5>Smart Cart System</h5>
-                                    <p>Persistent cart that merges guest and user sessions</p>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>PayPal Payment Integration</span>
                                 </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-credit-card"></i>
-                                    </div>
-                                    <h5>Payment Integration</h5>
-                                    <p>Seamless PayPal payment processing</p>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Persistent Cart System</span>
                                 </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                    <h5>Real-time Analytics</h5>
-                                    <p>Live order tracking and admin dashboard</p>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time Order Tracking</span>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="tech-stack">
+                        <div class="project-tech">
                             <h4>Tech Stack</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">React.js</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Express.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Redux</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">PayPal API</span>
-                                <span class="tech-tag">TailwindCSS</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>Redux</span>
+                                <span>JWT</span>
+                                <span>PayPal API</span>
                             </div>
                         </div>
                         
                         <div class="project-links">
                             <a href="https://github.com/boughanmiyoussef/E-commerce-ShopEase" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
-                                <span>View Source Code</span>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-file-code"></i>
-                                <span>Case Study</span>
+                                View Code
                             </a>
                         </div>
                     </div>
@@ -340,46 +216,39 @@
             </div>
             
             <!-- AI Project Placeholder -->
-            <div class="project-coming-soon" data-aos="fade-up">
-                <div class="coming-soon-card">
-                    <div class="card-background">
-                        <div class="neural-network"></div>
-                        <div class="pulsing-dots">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+            <div class="project-card coming-soon">
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <i class="fas fa-brain"></i>
+                        Advanced AI Project
+                    </h3>
+                    <span class="project-status">
+                        <i class="fas fa-clock"></i>
+                        In Progress
+                    </span>
+                </div>
+                
+                <div class="project-content">
+                    <div class="coming-soon-content">
+                        <div class="emoji-container">
+                            <div class="emoji">🤖</div>
+                            <div class="emoji">⚡</div>
+                            <div class="emoji">🧠</div>
                         </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="coming-soon-icon">
-                            <i class="fas fa-brain"></i>
-                            <div class="icon-glow"></div>
-                        </div>
-                        <h3>Advanced AI Project</h3>
-                        <p class="subtitle">Revolutionary Machine Learning Solution</p>
+                        
+                        <h4>Revolutionary AI Solution Coming Soon</h4>
+                        <p>Developing an innovative machine learning model that combines computer vision and natural language processing for real-world applications.</p>
+                        
                         <div class="progress-container">
                             <div class="progress-label">
                                 <span>Development Progress</span>
-                                <span class="progress-percentage">75%</span>
+                                <span class="progress-percent">75%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill"></div>
                             </div>
-                            <div class="progress-stats">
-                                <div class="stat">
-                                    <i class="fas fa-code"></i>
-                                    <span>25K+ Lines</span>
-                                </div>
-                                <div class="stat">
-                                    <i class="fas fa-database"></i>
-                                    <span>10K+ Datapoints</span>
-                                </div>
-                                <div class="stat">
-                                    <i class="fas fa-chart-line"></i>
-                                    <span>95% Accuracy</span>
-                                </div>
-                            </div>
                         </div>
+                        
                         <div class="countdown">
                             <div class="countdown-item">
                                 <div class="countdown-value">45</div>
@@ -394,10 +263,6 @@
                                 <div class="countdown-label">Minutes</div>
                             </div>
                         </div>
-                        <button class="notify-btn">
-                            <i class="fas fa-bell"></i>
-                            <span>Notify Me on Launch</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -407,120 +272,96 @@
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">Professional Resume</span>
-                    <span class="title-line"></span>
-                </h2>
-                <p class="section-subtitle">Comprehensive overview of skills, experience, and achievements</p>
-            </div>
+            <h2 class="section-title">Resume & Skills</h2>
+            <p class="section-subtitle">Professional overview and technical expertise</p>
             
             <div class="resume-content">
-                <div class="resume-card" data-aos="fade-right">
-                    <div class="card-header">
-                        <div class="header-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h3>Professional Profile</h3>
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <h3><i class="fas fa-file-alt"></i> Professional Resume</h3>
                     </div>
-                    <div class="card-body">
-                        <div class="profile-summary">
-                            <p>Software Engineer specialized in AI and Machine Learning with project-based training from Holberton School. Built scalable web applications and intelligent systems with cutting-edge technologies.</p>
+                    <div class="resume-body">
+                        <p>Software Engineer specialized in AI and Machine Learning with project-based training from Holberton School. Built scalable web applications and intelligent systems.</p>
+                        
+                        <div class="resume-stats">
+                            <div class="stat">
+                                <div class="stat-value">15+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">2000+</div>
+                                <div class="stat-label">Code Hours</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Tech Stacks</div>
+                            </div>
                         </div>
-                        <div class="highlight-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">15+</div>
-                                <div class="stat-text">Projects Completed</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">2000+</div>
-                                <div class="stat-text">Hours of Coding</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">5</div>
-                                <div class="stat-text">Tech Stacks</div>
-                            </div>
+                        
+                        <div class="resume-links">
+                            <a href="https://flowcv.com/resume/9sca2vpmin" target="_blank" class="btn">
+                                <i class="fas fa-eye"></i>
+                                View Online
+                            </a>
+                            <a href="Youssef-Boughanmi-Software_Engineer2025.pdf" download class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="resume-card" data-aos="fade-up">
-                    <div class="card-header">
-                        <div class="header-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Technical Skills</h3>
+                <div class="skills-card">
+                    <div class="skills-header">
+                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
                     </div>
-                    <div class="card-body">
-                        <div class="skills-category">
+                    <div class="skills-body">
+                        <div class="skill-category">
                             <h4>AI & Machine Learning</h4>
                             <div class="skill-items">
                                 <div class="skill-item">
-                                    <span class="skill-name">TensorFlow/Keras</span>
+                                    <span>TensorFlow/Keras</span>
                                     <div class="skill-bar">
                                         <div class="skill-level" style="width: 90%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">PyTorch</span>
+                                    <span>Python</span>
                                     <div class="skill-bar">
-                                        <div class="skill-level" style="width: 85%"></div>
+                                        <div class="skill-level" style="width: 95%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">Python</span>
+                                    <span>PyTorch</span>
                                     <div class="skill-bar">
-                                        <div class="skill-level" style="width: 95%"></div>
+                                        <div class="skill-level" style="width: 85%"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="skills-category">
+                        <div class="skill-category">
                             <h4>Full Stack Development</h4>
                             <div class="skill-items">
                                 <div class="skill-item">
-                                    <span class="skill-name">React.js</span>
+                                    <span>React.js</span>
                                     <div class="skill-bar">
                                         <div class="skill-level" style="width: 95%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">Node.js/Express</span>
+                                    <span>Node.js/Express</span>
                                     <div class="skill-bar">
                                         <div class="skill-level" style="width: 90%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">MongoDB</span>
+                                    <span>MongoDB</span>
                                     <div class="skill-bar">
                                         <div class="skill-level" style="width: 85%"></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="resume-links" data-aos="fade-left">
-                    <div class="links-container">
-                        <h3>Access My Resume</h3>
-                        <p>Choose your preferred format to view or download my complete resume</p>
-                        <div class="link-buttons">
-                            <a href="https://flowcv.com/resume/9sca2vpmin" target="_blank" class="link-btn">
-                                <i class="fas fa-eye"></i>
-                                <div>
-                                    <span class="link-title">View Online</span>
-                                    <span class="link-subtitle">Interactive Version</span>
-                                </div>
-                            </a>
-                            <a href="Youssef-Boughanmi-Software_Engineer2025.pdf" download class="link-btn">
-                                <i class="fas fa-download"></i>
-                                <div>
-                                    <span class="link-title">Download PDF</span>
-                                    <span class="link-subtitle">Print-Ready Version</span>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -531,198 +372,123 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-text">Let's Connect</span>
-                    <span class="title-line"></span>
-                </h2>
-                <p class="section-subtitle">Ready to discuss opportunities or collaborate on exciting projects</p>
-            </div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss opportunities or collaborate</p>
             
             <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="info-card">
-                        <div class="info-icon">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="info-content">
+                        <div class="contact-details">
                             <h4>Email</h4>
                             <p>yussefboughanmy@gmail.com</p>
-                            <a href="mailto:yussefboughanmy@gmail.com" class="info-link">
-                                Send Message
-                                <i class="fas fa-arrow-right"></i>
+                            <a href="mailto:yussefboughanmy@gmail.com" class="contact-link">
+                                Send Message <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                     
-                    <div class="info-card">
-                        <div class="info-icon">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="info-content">
+                        <div class="contact-details">
                             <h4>Phone</h4>
                             <p>+216 26 068 101</p>
-                            <a href="tel:+21626068101" class="info-link">
-                                Call Now
-                                <i class="fas fa-arrow-right"></i>
+                            <a href="tel:+21626068101" class="contact-link">
+                                Call Now <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                     
-                    <div class="info-card">
-                        <div class="info-icon">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
-                        <div class="info-content">
+                        <div class="contact-details">
                             <h4>LinkedIn</h4>
-                            <p>Professional Network</p>
-                            <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="info-link">
-                                Connect
-                                <i class="fas fa-arrow-right"></i>
+                            <p>Connect professionally</p>
+                            <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="contact-link">
+                                Visit Profile <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                     
-                    <div class="info-card">
-                        <div class="info-icon">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-github"></i>
                         </div>
-                        <div class="info-content">
+                        <div class="contact-details">
                             <h4>GitHub</h4>
-                            <p>Code Portfolio</p>
-                            <a href="https://github.com/boughanmiyoussef" target="_blank" class="info-link">
-                                Explore
-                                <i class="fas fa-arrow-right"></i>
+                            <p>View my code</p>
+                            <a href="https://github.com/boughanmiyoussef" target="_blank" class="contact-link">
+                                Explore Projects <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form" data-aos="fade-left">
-                    <div class="form-container">
-                        <div class="form-header">
-                            <h3>Send Me a Message</h3>
-                            <p>I'll get back to you as soon as possible</p>
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
                         </div>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" id="name" placeholder="Your Name" required>
-                                    <div class="input-icon">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="email" id="email" placeholder="Your Email" required>
-                                    <div class="input-icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" id="subject" placeholder="Subject" required>
-                                    <div class="input-icon">
-                                        <i class="fas fa-tag"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                                    <div class="input-icon">
-                                        <i class="fas fa-comment"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="submit-btn">
-                                <span>Send Message</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact-social" data-aos="fade-up">
-                <div class="social-links">
-                    <a href="https://github.com/boughanmiyoussef" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-dev"></i>
-                        <span>Dev.to</span>
-                    </a>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-logo">
-                        <div class="logo-container">
-                            <span class="logo-text">YB</span>
-                            <div class="logo-glow"></div>
-                        </div>
-                        <h3>Youssef Boughanmi</h3>
-                        <p class="tagline">AI & Machine Learning Engineer</p>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <div class="link-column">
-                            <h4>Navigation</h4>
-                            <a href="#home">Home</a>
-                            <a href="#narrative">My Story</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#resume">Resume</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                        <div class="link-column">
-                            <h4>Resources</h4>
-                            <a href="Youssef-Boughanmi-Software_Engineer2025.pdf" download>Resume PDF</a>
-                            <a href="https://github.com/boughanmiyoussef" target="_blank">GitHub</a>
-                            <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank">LinkedIn</a>
-                        </div>
-                        <div class="link-column">
-                            <h4>Contact</h4>
-                            <a href="mailto:yussefboughanmy@gmail.com">Email</a>
-                            <a href="tel:+21626068101">Phone</a>
-                            <a href="#contact">Contact Form</a>
-                        </div>
-                    </div>
+                <div class="footer-info">
+                    <h3>Youssef Boughanmi</h3>
+                    <p>AI & Machine Learning Engineer</p>
+                    <p>Building the future with code and algorithms</p>
                 </div>
                 
-                <div class="footer-bottom">
-                    <div class="copyright">
-                        <p>© <span id="currentYear"></span> Youssef Boughanmi. All rights reserved.</p>
-                        <p>Built with <i class="fas fa-heart"></i> and modern web technologies</p>
-                    </div>
-                    <div class="footer-actions">
-                        <button class="theme-toggle">
-                            <i class="fas fa-moon"></i>
-                            <span>Theme</span>
-                        </button>
-                        <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                            <i class="fas fa-arrow-up"></i>
-                            <span>Top</span>
-                        </button>
-                    </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
                 </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/boughanmiyoussef" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:yussefboughanmy@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Youssef Boughanmi. All rights reserved.</p>
+                <button id="backToTop" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </button>
             </div>
         </div>
     </footer>
