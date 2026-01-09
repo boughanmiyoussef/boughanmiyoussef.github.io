@@ -1,202 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youssef Boughanmi – Software Engineer | AI & ML</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Boughanmi | AI & ML Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="ProfilePic/ProfilePic.png">
 </head>
-
 <body>
-  <!-- *************  HEADER  ************* -->
-  <header class="header">
-    <div class="container header-flex">
-      <div class="header-left">
-        <img src="ProfilePic/ProfilePic.png" alt="Youssef Boughanmi" class="profile-pic">
-        <div class="header-txt">
-          <h1>Youssef Boughanmi</h1>
-          <p class="tagline">Software Engineer – AI & Machine Learning</p>
-          <div class="contact">
-            <p><i class="fas fa-envelope"></i> yussefboughanmy@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +216 26 068 101</p>
-            <p><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</p>
-          </div>
-          <div class="social">
-            <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/boughanmiyoussef" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-
-          <!--  CV BUTTONS  -->
-          <div class="cv-buttons">
-            <a href="https://flowcv.com/resume/9sca2vpmin" target="_blank" class="btn btn-outline">
-              <i class="fas fa-eye"></i> View CV
-            </a>
-            <button class="btn btn-primary" id="downloadCvBtn">
-              <i class="fas fa-download"></i> Download CV
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">YB</span>
+                <span class="name">Youssef Boughanmi</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
             </button>
-          </div>
         </div>
-      </div>
+    </nav>
 
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#languages">Languages</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-text">Youssef <span class="highlight">Boughanmi</span></h1>
+                    <h2 class="animate-text">Software Engineer – AI & Machine Learning Specialization</h2>
+                    <p class="animate-text">Building intelligent systems and scalable applications with cutting-edge technologies. Passionate about solving real-world problems with AI/ML solutions.</p>
+                    
+                    <div class="contact-info animate-text">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>yussefboughanmy@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+216 26 068 101</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tunis, Tunisia</span>
+                        </div>
+                    </div>
 
-  <!-- *************  SECTIONS  ************* -->
-  <main>
+                    <div class="cv-buttons animate-text">
+                        <!-- View CV Button -->
+                        <a href="https://flowcv.com/resume/9sca2vpmin" 
+                           target="_blank" 
+                           class="btn btn-primary"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-eye"></i> View CV Online
+                        </a>
+                        
+                        <!-- Download CV Button -->
+                        <a href="https://flowcv.com/resume/9sca2vpmin/download" 
+                           download="Youssef_Boughanmi_CV.pdf"
+                           class="btn btn-outline"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+
+                    <div class="social-links animate-text">
+                        <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/boughanmiyoussef" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:yussefboughanmy@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://flowcv.com/resume/9sca2vpmin" target="_blank" aria-label="CV">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-image">
+                    <div class="image-wrapper">
+                        <img src="ProfilePic/ProfilePic.png" alt="Youssef Boughanmi">
+                        <div class="image-overlay"></div>
+                        <div class="tech-badge">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Explore Portfolio</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about" class="section about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>Software Engineer specialized in AI and Machine Learning, with project-based training from Holberton School.
-          Built scalable web applications using the MERN stack and intelligent systems with Python, TensorFlow, and Keras.
-          Developed ShopEase, a full-stack e-commerce platform featuring secure payments, persistent cart merging, and
-          real-time order tracking. Proficient in RESTful APIs, deep learning workflows, and foundational DevOps practices.</p>
-      </div>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Software Engineer specialized in AI and Machine Learning, with project-based training from Holberton School. Built scalable web applications using the MERN stack and intelligent systems with Python, TensorFlow, and Keras.</p>
+                    <p>Developed ShopEase, a full-stack e-commerce platform featuring secure payments, persistent cart merging, and real-time order tracking. Proficient in RESTful APIs, deep learning workflows, and foundational DevOps practices.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Training</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Project-Based</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Languages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="section skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h4>Programming Languages</h4>
-            <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>Python</li>
-              <li>C</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Frameworks / Libraries</h4>
-            <ul>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Redux</li>
-              <li>TensorFlow</li>
-              <li>Keras</li>
-              <li>PyTorch</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Tools & Platforms</h4>
-            <ul>
-              <li>Git</li>
-              <li>Docker</li>
-              <li>VS Code</li>
-              <li>Postman</li>
-              <li>Cloudinary</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Soft Skills</h4>
-            <ul>
-              <li>Problem Solving</li>
-              <li>Team Collaboration</li>
-              <li>Self-Learning</li>
-              <li>Time Management</li>
-              <li>Communication</li>
-            </ul>
-          </div>
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Cloudinary</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">npm/yarn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>DevOps & Security</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                        <span class="skill-tag">CI/CD Basics</span>
+                        <span class="skill-tag">CORS</span>
+                        <span class="skill-tag">dotenv</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Self-Learning</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Communication</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section projects">
-      <div class="container">
-        <h2>Projects</h2>
-
-        <!-- ShopEase -->
-        <div class="project-card">
-          <div class="project-info">
-            <h3>ShopEase E-commerce Platform</h3>
-            <p class="project-date">Dec 2024 – Mar 2025</p>
-            <p class="project-tech">
-              React.js • Node.js • Express.js • MongoDB • Redux • TailwindCSS • JWT • Cloudinary • PayPal API
-            </p>
-            <ul class="project-details">
-              <li>Built a full-stack marketplace with user/admin roles, secure JWT auth and PayPal integration.</li>
-              <li>Persistent cart that merges guest & logged-in sessions → ↑ retention.</li>
-              <li>Real-time order tracking + smart filtering → ↓ customer search time.</li>
-              <li>Front-end optimised with React & Tailwind → 30 % faster mobile loads.</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/boughanmiyoussef" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- ShopEase Project -->
+            <div class="project-card featured">
+                <div class="project-header">
+                    <div>
+                        <h3>ShopEase E-commerce Platform</h3>
+                        <p class="project-date">December 2024 – March 2025</p>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-badge">Featured</span>
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">TailwindCSS</span>
+                    <span class="tech-tag">JWT</span>
+                    <span class="tech-tag">Cloudinary</span>
+                    <span class="tech-tag">PayPal API</span>
+                </div>
+                
+                <div class="project-description">
+                    <p>A full-stack e-commerce platform with advanced features for both users and administrators.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features & Achievements:</h4>
+                        <ul>
+                            <li>Engineered user/admin role system with secure JWT authentication and PayPal payment integration</li>
+                            <li>Developed persistent cart system that merges guest and user sessions, improving user retention</li>
+                            <li>Built real-time order tracking and advanced product filtering features</li>
+                            <li>Optimized front-end performance achieving 30% reduction in mobile load times</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-gallery">
+                    <h4>Project Gallery</h4>
+                    <div class="gallery-container">
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- Images loaded via JavaScript -->
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="gallery-btn prev-btn" aria-label="Previous image">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="gallery-counter">
+                                <span id="currentImage">1</span> / <span id="totalImages">8</span>
+                            </div>
+                            <button class="gallery-btn next-btn" aria-label="Next image">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!--  IMAGE GALLERY  -->
-          <div class="gallery">
-            <button class="gallery-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
-            <div class="gallery-track">
-              <img src="ShopEase/Shopease1.png" alt="ShopEase 1" class="gallery-img active">
-              <img src="ShopEase/Shopease2.png" alt="ShopEase 2" class="gallery-img">
-              <img src="ShopEase/Shopease3.png" alt="ShopEase 3" class="gallery-img">
-              <img src="ShopEase/Shopease4.png" alt="ShopEase 4" class="gallery-img">
-              <img src="ShopEase/Shopease5.png" alt="ShopEase 5" class="gallery-img">
-              <img src="ShopEase/Shopease6.png" alt="ShopEase 6" class="gallery-img">
-              <img src="ShopEase/Shopease7.png" alt="ShopEase 7" class="gallery-img">
-              <img src="ShopEase/Shopease8.png" alt="ShopEase 8" class="gallery-img">
+            
+            <!-- Placeholder Projects -->
+            <div class="coming-soon">
+                <h3>More Projects Coming Soon</h3>
+                <div class="placeholder-projects">
+                    <div class="placeholder-card">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI Disease Prediction</h4>
+                        <p>ML model for symptom-based disease prediction and medicine recommendation</p>
+                        <div class="placeholder-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Flask API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="placeholder-card">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Real-time Analytics Dashboard</h4>
+                        <p>Data visualization platform with real-time updates</p>
+                        <div class="placeholder-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="gallery-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
-            <div class="gallery-dots"></div>
-          </div>
         </div>
-
-        <!--  PLACEHOLDER  -->
-        <div class="project-card placeholder">
-          <h4>Project 2 (Coming Soon)</h4>
-          <p>AI-driven symptom-to-medicine recommendation system – 92 % F1-score. Code & demo live in April 2025.</p>
-        </div>
-      </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="section education">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="edu-card">
-          <p class="edu-date">Oct 2024 – Mar 2026  |  Tunis, Tunisia</p>
-          <h3>Holberton School</h3>
-          <p class="edu-degree">Software Engineer – AI & Machine Learning Specialization</p>
-          <ul>
-            <li>Intensive project-based curriculum (MERN, C, algorithms, AI/ML with TensorFlow/Keras).</li>
-            <li>Built & deployed scalable web apps and deep-learning models.</li>
-          </ul>
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span>Oct 2024 - Mar 2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="edu-header">
+                            <h3>Software Engineer – AI & Machine Learning Specialization</h3>
+                            <span class="location">Tunis, Tunisia</span>
+                        </div>
+                        <p class="institution">Holberton School</p>
+                        <ul class="edu-details">
+                            <li>Completed intensive project-based curriculum in full-stack development and applied machine learning</li>
+                            <li>Gained expertise in MERN stack, system programming in C, algorithms, databases, and AI/ML with TensorFlow/Keras</li>
+                            <li>Specialized in building and deploying scalable applications and deep learning models</li>
+                            <li>Developed 10+ projects including full-stack applications and AI models</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+    <!-- Languages Section -->
     <section id="languages" class="section languages">
-      <div class="container">
-        <h2>Languages</h2>
-        <div class="lang-badges">
-          <span>Arabic</span><span>English</span><span>French</span>
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-container">
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇹🇳</span>
+                        <h3>Arabic</h3>
+                    </div>
+                    <p class="language-level">Native Speaker</p>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇬🇧</span>
+                        <h3>English</h3>
+                    </div>
+                    <p class="language-level">Professional Proficiency</p>
+                    <div class="language-bar">
+                        <div class="bar-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇫🇷</span>
+                        <h3>French</h3>
+                    </div>
+                    <p class="language-level">Fluent</p>
+                    <div class="language-bar">
+                        <div class="bar-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Youssef Boughanmi. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yussefboughanmy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+216 26 068 101</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Tunis, Tunisia</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/youssef-boughanmi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Youssef Boughanmi</h3>
+                    <p>Software Engineer – AI & Machine Learning Specialization</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/youssef-boughanmi-4990222a0" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/boughanmiyoussef" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:yussefboughanmy@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Youssef Boughanmi. All rights reserved.</p>
+                <p>Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
