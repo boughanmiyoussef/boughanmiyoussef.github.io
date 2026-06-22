@@ -967,7 +967,6 @@
               <h4>Resources</h4>
               <ul>
                 <li><a href="https://flowcv.com/resume/9sca2vpmin" target="_blank">Online CV</a></li>
-                <li><a href="#downloadCV">Download CV</a></li>
                 <li><a href="#contact">Hire Me</a></li>
                 <li><a href="mailto:yussefboughanmy@gmail.com">Email Directly</a></li>
               </ul>
@@ -1068,9 +1067,6 @@
 
         // Initialize contact form with EmailJS
         initializeContactForm();
-
-        // Initialize CV Download
-        initializeCVDownload();
 
         // Initialize navbar highlighting
         initializeNavHighlighting();
@@ -1220,17 +1216,6 @@
         }
         link.classList.add('active');
         activeNavLink = link;
-      }
-
-      // CV Download Functionality
-      function initializeCVDownload() {
-        const downloadBtn = document.getElementById("downloadCV");
-        
-        if (downloadBtn) {
-          downloadBtn.addEventListener("click", function(e) {
-            console.log("CV download initiated");
-          });
-        }
       }
 
       // Animation Functions
