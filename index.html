@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
@@ -32,6 +33,10 @@
           <a href="#education" class="nav-link"><span>Education</span><div class="nav-line"></div></a>
           <a href="#contact" class="nav-link"><span>Contact</span><div class="nav-line"></div></a>
         </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-sun icon-sun"></i>
+          <i class="fas fa-moon icon-moon"></i>
+        </button>
         <button class="menu-toggle" aria-label="Toggle menu">
           <i class="fas fa-bars"></i>
         </button>
@@ -46,8 +51,9 @@
             <h1 class="animate-text">Youssef <span class="highlight">Boughanmi</span></h1>
             <h2 class="animate-text">Software Engineer – Specialization in Machine Learning</h2>
             <p class="animate-text">
-              Building intelligent solutions that transform complex problems into scalable AI systems.
-              Specializing in machine learning algorithms, full-stack development, and data-driven applications.
+              I build machine learning systems end-to-end — from raw data to a deployed, working product.
+              Nine shipped projects span retrieval-augmented generation, computer vision, time series
+              forecasting, and data engineering, each one live and testable, not just a notebook.
             </p>
 
             <div class="contact-info">
@@ -55,9 +61,6 @@
               <div class="contact-item"><i class="fas fa-phone"></i><span>+216 26 068 101</span></div>
               <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Tunis, Tunisia</span></div>
             </div>
-
-    
-           
             <div class="cv-buttons animate-text">
               <div class="cv-lang-group">
                 <a href="cv/Youssef_Boughanmi_CV_EN.pdf" download class="btn btn-primary" data-cv-download>
@@ -99,14 +102,17 @@
         <div class="about-content">
           <div class="about-text">
             <p>
-              Software Engineer specializing in Artificial Intelligence and Machine Learning with intensive
-              project-based training from Holberton School. Proficient in building scalable applications
-              and designing intelligent systems using modern tech stacks.
+              I'm a Software Engineer trained through Holberton School's intensive, project-based
+              program, specializing in Machine Learning and Artificial Intelligence. I build things
+              end-to-end: pick a real problem, build the full pipeline, deploy it somewhere real, and
+              measure whether it actually works.
             </p>
             <p>
-              Developed <strong>ShopEase</strong> — a full-stack e-commerce platform — alongside multiple
-              AI-powered projects spanning computer vision, retrieval-augmented generation, time series
-              forecasting, anomaly detection, and NLP.
+              That includes <strong>FastYolo</strong>, a CPU-only object detector built for edge
+              hardware, <strong>DocuMint</strong>, a local retrieval-augmented document assistant, and
+              <strong>ShopEase</strong>, a full-stack e-commerce platform with authentication and
+              payment integration — alongside forecasting, anomaly detection, and NLP systems, each
+              with measured, reproducible results.
             </p>
             <div class="stats-grid">
               <div class="stat"><h3>2+</h3><p>Years Training</p></div>
@@ -471,6 +477,7 @@
                 <div class="education-meta">
                   <span class="institution">Holberton School</span>
                   <span class="location">Tunis, Tunisia</span>
+                  <span class="edu-date"><i class="fas fa-calendar"></i> Graduated June 2026</span>
                 </div>
               </div>
             </div>
@@ -496,14 +503,13 @@
               </div>
               <!--
                 Certificate viewer: opens inline in a modal instead of a new tab.
-                Point data-doc-src at your actual certificate PDF path -- it
-                already matches what you referenced before, so if that file
-                exists in /certificates in your repo, this works as-is.
+                Point data-doc-src at your actual certificate PDF -- it renders
+                as a clean canvas image via PDF.js, so no image export needed.
               -->
               <div class="education-certification">
                 <span class="verify-label">Certification:</span>
                 <button class="verify-link" data-doc-src="certificates/holberton_certif.pdf" data-doc-title="Holberton School Certificate">
-                  <i class="fas fa-file-alt"></i> View Certification
+                  <i class="fas fa-image"></i> View Certification
                 </button>
               </div>
             </div>
@@ -517,6 +523,7 @@
                 <div class="education-meta">
                   <span class="institution">Taha Hussein High School</span>
                   <span class="location">Mégrine, Tunisia</span>
+                  <span class="edu-date"><i class="fas fa-calendar"></i> Graduated June 2022</span>
                 </div>
               </div>
             </div>
@@ -525,7 +532,7 @@
               <div class="education-certification">
                 <span class="verify-label">Certificate:</span>
                 <button class="verify-link" data-doc-src="certificates/highschool_diploma.pdf" data-doc-title="High School Diploma">
-                  <i class="fas fa-file-alt"></i> View Diploma
+                  <i class="fas fa-image"></i> View Diploma
                 </button>
               </div>
             </div>

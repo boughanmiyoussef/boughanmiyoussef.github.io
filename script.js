@@ -1,11 +1,15 @@
-// EmailJS Configuration
-// NOTE: If messages aren't sending, verify these three values in your EmailJS
-// dashboard (Account > API Keys, and Email Services / Email Templates):
-// public key, service ID, template ID. Also confirm your sending domain
-// (boughanmiyoussef.github.io) is added under Account > Security > Allowed origins,
-// since EmailJS blocks requests from unlisted domains by default.
+
+// This is wrapped in a guard on purpose: if the EmailJS CDN script hasn't
+// finished loading yet (or is blocked by an ad blocker), calling emailjs.init()
+// directly throws and silently kills every other script on this page --
+// including the theme toggle, mobile menu, and animations. This check
+// prevents that entire class of failure.
 (function () {
-  emailjs.init("RvwPUe7cVMqGE9YRS");
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("RvwPUe7cVMqGE9YRS");
+  } else {
+    console.warn("EmailJS did not load -- the contact form will not send until the CDN script is reachable.");
+  }
 })();
 
 let activeNavLink = null;
@@ -13,16 +17,24 @@ let activeNavLink = null;
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-  initializeAnimations();
-  initializeMobileMenu();
-  initializeBackToTop();
-  initializeContactForm();
-  initializeNavHighlighting();
-  initializeCounters();
-  initializeTechTooltips();
-  initializeDocModals();
-  initializeCvDownloads();
-  initializeProjectFilter();
+  // Each init is wrapped so one broken feature can never block the others
+  // (this is what silently killed the theme toggle before).
+  const inits = [
+    initializeThemeToggle,
+    initializeMobileMenu,
+    initializeAnimations,
+    initializeBackToTop,
+    initializeContactForm,
+    initializeNavHighlighting,
+    initializeCounters,
+    initializeTechTooltips,
+    initializeDocModals,
+    initializeCvDownloads,
+    initializeProjectFilter,
+  ];
+  inits.forEach((fn) => {
+    try { fn(); } catch (err) { console.error(`${fn.name} failed:`, err); }
+  });
 
   setTimeout(() => {
     document.getElementById("loadingScreen").classList.add("hidden");
@@ -229,16 +241,57 @@ function initializeDocModals() {
   });
 }
 
+// PDF.js worker (required for PDF.js to parse files off the main thread)
+if (window.pdfjsLib) {
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+}
+
 function openDocModal(src, title, modalTitle, modalBody, overlay) {
   modalTitle.textContent = title;
-  // Try to embed the PDF directly. If the file is missing (404), the iframe
-  // will just show an empty/broken viewer, so we also provide a direct link
-  // as a fallback the user can always click.
-  modalBody.innerHTML = `
-    <iframe src="${src}" title="${title}"></iframe>
-  `;
+  modalBody.innerHTML = `<div class="doc-modal-loading"><i class="fas fa-spinner fa-spin"></i> Loading...</div>`;
   overlay.classList.add("open");
   document.body.style.overflow = "hidden";
+
+  if (!window.pdfjsLib) {
+    modalBody.innerHTML = `
+      <div class="doc-modal-fallback">
+        <i class="fas fa-exclamation-circle" style="font-size: 2rem;"></i>
+        <p>Viewer failed to load. <a href="${src}" target="_blank">Open the file directly</a> instead.</p>
+      </div>`;
+    return;
+  }
+
+  // Renders the PDF's first page onto a <canvas> -- this looks like a plain
+  // image (no toolbar, no "open with" browser chrome) and needs nothing
+  // from you except the original PDF at this path.
+  pdfjsLib.getDocument(src).promise
+    .then((pdf) => pdf.getPage(1))
+    .then((page) => {
+      const containerWidth = modalBody.clientWidth || 800;
+      const baseViewport = page.getViewport({ scale: 1 });
+      const scale = Math.min((containerWidth - 40) / baseViewport.width, 2.5);
+      const viewport = page.getViewport({ scale });
+
+      const canvas = document.createElement("canvas");
+      canvas.className = "doc-modal-canvas";
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      const ctx = canvas.getContext("2d");
+
+      modalBody.innerHTML = "";
+      modalBody.appendChild(canvas);
+
+      return page.render({ canvasContext: ctx, viewport }).promise;
+    })
+    .catch((err) => {
+      console.error("PDF render error:", err);
+      modalBody.innerHTML = `
+        <div class="doc-modal-fallback">
+          <i class="fas fa-file-pdf" style="font-size: 2rem;"></i>
+          <p>Document not found yet at <code>${src}</code>.<br>Add your exported PDF to your repo at that exact path to enable this preview.</p>
+        </div>`;
+    });
 }
 
 function closeDocModal(overlay, modalBody) {
@@ -282,6 +335,24 @@ function showToast(message) {
   toast.classList.add("show");
   clearTimeout(toast._timer);
   toast._timer = setTimeout(() => toast.classList.remove("show"), 4500);
+}
+
+/* ====== Dark / Light Mode Toggle ====== */
+function initializeThemeToggle() {
+  const toggle = document.getElementById("themeToggle");
+  if (!toggle) return;
+
+  const saved = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const initial = saved || (prefersDark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", initial);
+
+  toggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme") || "light";
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  });
 }
 
 /* ====== Projects filter (Featured / More) ====== */
